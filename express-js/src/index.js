@@ -18,7 +18,7 @@ app.use(fileUpload({
 }));
 
 app.use("/", router);
-app.use("*", notFoundURLHandler);
+
 app.use(errorHandler);
 
 /* Run the express.js application */
