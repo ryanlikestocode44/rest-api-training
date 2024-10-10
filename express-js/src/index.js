@@ -21,6 +21,9 @@ app.use("/", router);
 
 app.use(errorHandler);
 
+app.get("/", (req, res) => {
+    res.send("Halo, ini adalah latihan untuk mempelajari RESTful API")
+})
 /* Run the express.js application */
 app.listen(port, () => {
     console.log(`The express.js app is runing on port ${port}`);
